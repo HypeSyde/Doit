@@ -13,6 +13,7 @@
 		438C9ED91F440C12002B3A2A /* Do_It.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 438C9ED71F440C12002B3A2A /* Do_It.xcdatamodeld */; };
 		438C9EDB1F440C12002B3A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438C9EDA1F440C12002B3A2A /* Assets.xcassets */; };
 		438C9EDE1F440C12002B3A2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438C9EDC1F440C12002B3A2A /* LaunchScreen.storyboard */; };
+		438C9EE61F441108002B3A2A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438C9EE51F441108002B3A2A /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		438C9EDA1F440C12002B3A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		438C9EDD1F440C12002B3A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		438C9EDF1F440C12002B3A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		438C9EE51F441108002B3A2A /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				438C9ED01F440C12002B3A2A /* AppDelegate.swift */,
 				438C9ED21F440C12002B3A2A /* ViewController.swift */,
+				438C9EE51F441108002B3A2A /* Task.swift */,
 				438C9ED41F440C12002B3A2A /* Main.storyboard */,
 				438C9EDA1F440C12002B3A2A /* Assets.xcassets */,
 				438C9EDC1F440C12002B3A2A /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438C9EE61F441108002B3A2A /* Task.swift in Sources */,
 				438C9ED91F440C12002B3A2A /* Do_It.xcdatamodeld in Sources */,
 				438C9ED31F440C12002B3A2A /* ViewController.swift in Sources */,
 				438C9ED11F440C12002B3A2A /* AppDelegate.swift in Sources */,
