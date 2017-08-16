@@ -52,7 +52,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let task3 = Task()
         task3.name = "jump off bridge"
         task3.important = false
+        
         return [task1, task2, task3]
+    }
+  
+    @IBAction func PlusTapped(_ sender: Any) {
+        performSegue(withIdentifier: "addSegue", sender: nil)
     }
     
 }

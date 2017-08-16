@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Do It-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Do_It" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Do_It" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -35,14 +35,40 @@
                             <constraint firstItem="zHK-Hq-ZT4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sx8-fU-0VI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Teb-2q-Cyq"/>
+                    <navigationItem key="navigationItem" title="Do It" id="Teb-2q-Cyq">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="2R8-m5-wGE"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="CGR-SB-NCw">
+                            <connections>
+                                <action selector="PlusTapped:" destination="BYZ-38-t0r" id="Fmf-C5-EWV"/>
+                                <segue destination="RY5-jD-NF6" kind="show" identifier="addSegue" id="Epa-59-pDJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="TableView" destination="zHK-Hq-ZT4" id="Kq6-u2-6GA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1128.8" y="73.313343328335833"/>
+            <point key="canvasLocation" x="425" y="364"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cdg-Rx-eUX">
+            <objects>
+                <viewController id="RY5-jD-NF6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="laH-3y-mgi"/>
+                        <viewControllerLayoutGuide type="bottom" id="xSa-KG-Qnv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cfb-CT-ATd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ez-Gq-2vN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1164" y="364"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KF4-tb-vCI">
@@ -60,7 +86,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P72-RC-TJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="189.59999999999999" y="73.313343328335833"/>
+            <point key="canvasLocation" x="-537" y="364"/>
         </scene>
     </scenes>
 </document>
